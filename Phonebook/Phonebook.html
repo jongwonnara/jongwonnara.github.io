@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javajs.js"></script>
+    <title>Jongwon-15054024</title>
+
+    <style>
+    #ln {
+    border: 1px solid black;
+    margin-left: 50px;
+    }
+
+    #fn {
+    border: 1px solid black;
+    margin-left: 48px;
+    }
+
+    #pn {
+    border: 1px solid black;
+    margin-left: 25px;
+    }
+
+    talbe {
+    width: 100px;
+    }   
+
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    }
+
+    th {
+    width: 130px;
+    background-color: rgb(219, 219, 219);
+    }
+
+    #td4 {
+    width: 80px;
+    }
+
+    #th1, #th2 {
+    width: 150px;
+    }
+
+    #Del {
+    border: 1px solid black;
+    background-color:gray;
+    padding-left: 20px; 
+    padding-right: 20px;
+    }
+    
+    #button-save {
+    background-color:skyblue;
+    border:1px solid black;
+    border-radius: 4px ;
+    padding-left: 20px; 
+    padding-right: 20px;
+    margin-left: 205px;
+    margin-bottom: 20px;
+    }  
+    
+    
+    </style>
+</head>
+<body>
+
+<h1>Phone Book</h1>
+
+<div id="main">
+    Last Name:<input id="ln" type="text" value="Last Name" onfocus="this.value=''" 
+    onblur="if(this.value =='') this.value='Last Name';" /><br><br>
+    First Name:<input id="fn" type="text" value="first Name" onfocus="this.value=''" 
+    onblur="if(this.value =='') this.value='first Name';"/><br><br>
+    Phone Number:<input id="pn" type="text" value="Phone Number" onfocus="this.value=''" 
+    onblur="if(this.value =='') this.value='Phone Numer';"/><br><br>
+</div>
+
+
+
+<button id="button-save" onclick="add_row()">Save</button>
+
+
+<table>
+  <thead>
+    <th>▼ Last Name</th>
+    <th>▼ First Name</th>
+    <th colspan="2">▼ Phone Number</th><br><br>    
+  </thead>
+  <tbody id="tablebody"></tbody>
+  <tfoot></tfoot>
+</table>
+
+</script>
+</html>
