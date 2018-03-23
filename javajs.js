@@ -1,4 +1,4 @@
-//java.js
+//java
 
 function add_row() {
   var tablebody = document.getElementById('tablebody');
