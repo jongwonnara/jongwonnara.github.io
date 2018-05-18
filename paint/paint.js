@@ -11,16 +11,16 @@ var ready = function(){
 }
 
 var w1 = function(){
- ctx.lineWidth = 0.1;
+ ctx.lineWidth = 10;
 }
 var w5 = function(){
- ctx.lineWidth = 5;
-}
-var w15 = function(){
  ctx.lineWidth = 15;
 }
+var w15 = function(){
+ ctx.lineWidth = 20;
+}
 var w20 = function(){
-    ctx.lineWidth = 20;
+    ctx.lineWidth = 25;
    }
 var w30 = function(){
     ctx.lineWidth = 30;
@@ -39,20 +39,20 @@ var yellow = function(){
 var green = function(){
     ctx.strokeStyle = '#008000';
    }
-var blue = function(){
-    ctx.strokeStyle = '#0000ff';
+var gold = function(){
+    ctx.strokeStyle = '#ffd700';
    }
-var navy = function(){
-    ctx.strokeStyle = '#000080';
+var navajowhite = function(){
+    ctx.strokeStyle = '#ffdead';
    }
-var purple = function(){
-    ctx.strokeStyle = '#800080';
+var hotpink = function(){
+    ctx.strokeStyle = '#ff69b4';
    }
 var brown = function(){
     ctx.strokeStyle = '#835c3b';
    }
-var pink = function(){
-    ctx.strokeStyle = '#e45e9d';
+var skyblue = function(){
+    ctx.strokeStyle = '#add8e6';
    }
 var gray = function(){
     ctx.strokeStyle = '#808080';
