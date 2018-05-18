@@ -17,6 +17,17 @@ function add_row() {
   cell3.innerHTML = document.getElementById('pn').value;
   cell4.appendChild(objInputButton);
 }
+  /*
+    var pb = Nem Array();
+    
+    var p = new Object
+    
+    updateTable(p);
+    function updateTable(p)
+    {
+     docu
+    }
+  */
 
 function delete_row() {
   var tablebody = document.getElementById('tablebody');
