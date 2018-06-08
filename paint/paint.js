@@ -10,19 +10,19 @@ var ready = function(){
  window.onmouseup = drawEnd;
 }
 
-var w1 = function(){
+var point10 = function(){
  ctx.lineWidth = 10;
 }
-var w5 = function(){
+var point15 = function(){
  ctx.lineWidth = 15;
 }
-var w15 = function(){
+var point20 = function(){
  ctx.lineWidth = 20;
 }
-var w20 = function(){
+var point25 = function(){
     ctx.lineWidth = 25;
    }
-var w30 = function(){
+var point30 = function(){
     ctx.lineWidth = 30;
    }
 
