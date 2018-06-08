@@ -12,7 +12,7 @@ function setupFireBase(){
       firebase.initializeApp(config);
 
 
-    var ref = firebase.database().ref("Empolyees");
+    var ref = firebase.database().ref("empolyees");
     
     //when child is added
     ref.on("child_added", function(snap){
@@ -49,7 +49,7 @@ function setupFireBase(){
 
         action.onclick = function (){
             var Empolyees_id = this.parentElement.parentElement.id;
-            var Empolyees = firebase.database().ref("Empolyees").child(Empolyees_id);
+            var Empolyees = firebase.database().ref("empolyees").child(empolyees_id);
             Empolyees.remove();
             var del_tr = document.querySelector("#" + Empolyees_id);
             del_tr.remove();      

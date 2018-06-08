@@ -90,7 +90,7 @@ window.onload = function(){
 
        
         
-        firebase.database().ref().child("Customers").push().set(
+        firebase.database().ref().child("customers").push().set(
             {
                 id:id,
                 firstname:firstname,
