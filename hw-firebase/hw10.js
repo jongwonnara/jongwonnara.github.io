@@ -3,14 +3,14 @@
 
 function setupFireBase(){
     var config = {
-        apiKey: "AIzaSyD6DX8ugIk7UvsMOvlnYILh6swlf7jKU9M",
-        authDomain: "park-jong-won.firebaseapp.com",
-        databaseURL: "https://park-jong-won.firebaseio.com",
-        projectId: "park-jong-won",
-        storageBucket: "park-jong-won.appspot.com",
-        messagingSenderId: "514403096629"
+        apiKey: "AIzaSyDNjObU9AhIbr8CumG_UMtS9tQzqI_Q3Ug",
+        authDomain: "jongwon-6cfb5.firebaseapp.com",
+        databaseURL: "https://jongwon-6cfb5.firebaseio.com",
+        projectId: "jongwon-6cfb5",
+        storageBucket: "",
+        messagingSenderId: "237755363276"
       };
-      firebase.initializeApp(config);
+      firebase.initializeApp(config);    
 
     var ref = firebase.database().ref("Empolyees");
     
