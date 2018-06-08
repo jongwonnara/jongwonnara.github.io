@@ -4,12 +4,12 @@
 function setupFireBase(){
     // Initialize Firebase
     var config = {
-        apiKey: "AIzaSyCqpMjTI7Xa2xnwDNsOGnEYsOy8x8ziioQ",
-        authDomain: "webp-e86d6.firebaseapp.com",
-        databaseURL: "https://webp-e86d6.firebaseio.com",
-        projectId: "webp-e86d6",
-        storageBucket: "webp-e86d6.appspot.com",
-        messagingSenderId: "615838044537"
+        apiKey: "AIzaSyD6DX8ugIk7UvsMOvlnYILh6swlf7jKU9M",
+        authDomain: "park-jong-won.firebaseapp.com",
+        databaseURL: "https://park-jong-won.firebaseio.com",
+        projectId: "park-jong-won",
+        storageBucket: "park-jong-won.appspot.com",
+        messagingSenderId: "514403096629"
       };
       firebase.initializeApp(config);
 
