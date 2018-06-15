@@ -7,19 +7,12 @@
     <title></title>
     <style>
         #main{
-            width:300px;
+            width:600px;
             min-height:500px;
             margin:auto;
             border:2px solid #aaa;
             padding:5px;
         }
-        #aa{
-            width:200px;
-            min-height:50px;
-            margin:auto;
-            border:2px solid #aaa;
-            padding:5px;
-             }
         input{
             padding:5px;
             font-size:1.2em;
@@ -28,19 +21,25 @@
 </head>
 <body>
     <div id="main">
-        <h1>KIA vs DOOSAN</h1> <br>
-        <h2>Team</h2>
-        <form name="Team">
-            <select>
-            <option>KIA
-            <option>DOOSAN
-            </select>
-        </form> <br>
-        <h2>Description</h2>
-        <input type="text" id="aa"></input>
-        <h2>Point</h2> <input type="text" value="Point"><br><br>
-        <button id="aa">SAVE</button>
-    </div>
-</body>
+        
+    <h1>ball</h1>
+       Ball ID<br/>         <input type="text"  id="ballid"><br/>
+       Ball Color<br/> <input type="text"  id="ballco"><br/>
+       Ball Radius<br/>  <input type="text"  id="ballra"><br/>
+       <button id="button_save">Save</button>
 
-      
+       <h3>balls</h3>
+    <table id="list" width="100%" border="1"> 
+        <tr><th>Ball ID</th> <th>Ball Color</th> <th>Ball Radius</th> <th>Status</th></tr>
+
+
+       
+
+
+    </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="app3.js"></script>
+</body>
+</html>

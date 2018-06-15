@@ -1,4 +1,5 @@
 function setupFireBase(){
+    // Initialize Firebase
     var config = {
         apiKey: "AIzaSyDNjObU9AhIbr8CumG_UMtS9tQzqI_Q3Ug",
         authDomain: "jongwon-6cfb5.firebaseapp.com",
@@ -60,4 +61,28 @@ window.onload = function(){
     
     //alert("ok");
     setupFireBase();
+    
+    var btnSave = document.querySelector("#button_save");
+    //btnSave.onclick = function() {} #old style    
+    btnSave.addEventListener("click",function(){
+        var ballid = document.querySelector("#ballid").value;
+        var ballco = document.querySelector("#ballco").value;
+        var ballra = document.querySelector("#ballra").value;
+       
+
+       
+
+        firebase.database().ref().child("balls").push().set(
+            {
+               ballid:ballid,
+               ballco:ballco,
+               ballra:ballra
+                
+            }
+        );
+
+
+    });
+
+
 }
