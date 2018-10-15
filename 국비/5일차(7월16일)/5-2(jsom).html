@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*
+            json()
+            -자료를 저장하는 방식
+            -자바스크립트의 객체 작성과 유사하다.
+            비슷한 문법 -> XML
+
+            중괄호를 활용하여 키(이름)와 값을 넣는다.
+            -XML보다 가볍다.
+
+        */
+
+        var student = {
+            'name': '박종원',
+            'age': 20,
+            '국어' : 90,            
+            '수학' : 90,
+            '영어' : 90,
+            '과학' : 90
+        }
+        /*자바스크립트에서 생성한 object는 
+        데이터를 전달하기 위해서 문자열 타입으로 
+        바뀌어야한다 그때 사용하는 함수 JSON.stringify(obj)
+        
+        */
+
+        console.log(typeof student);
+        console.log(student);
+        console.log(typeof JSON.stringify(student));
+        console.log(JSON.stringify(student));
+
+        var json = JSON.stringify(student);//JSON 문자열
+        document.write(json.name); //JSON 은 문자열
+
+        /*문자열인 json을 JavaScript dbject로 변경하는
+        함수, JSON.parse(json(josn 문자열을 담고있는 변수명));*/
+        var odj = JSON.parse(json);
+        document.write(odj.name);
+
+        
+
+
+    </script>
+    XML
+    <student>
+        <name>'홍길동'</name>
+        <age>20</age>
+        <korea>90</korea>
+        <math>90</math>
+        <science>90</science>
+        <english>90</english>
+    </student>
+</head>
+<body>
+    
+</body>
+</html>

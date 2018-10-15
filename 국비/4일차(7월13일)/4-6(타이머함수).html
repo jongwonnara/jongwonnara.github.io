@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+    010-9947-2078
+    타이머 함수 
+    특정한 시간에 특정한 함수를 실행
+    setTimeout(함수명, 밀리초);
+    : 밀리초 후에 함수 실행
+    setInterval(함수명, 밀리초);
+    : 밀리초 간격으로 함수 실행
+    clearTimeout(setTimeout 변수);
+    : 셋타임아웃 중단
+    clearInterval(setInterval 변수);
+    : 샛인터벌 중단
+    */
+   setTimeout(function(){
+       document.write("ㅁㅁ");
+   },5000); setTimeout(function(){
+       document.write("ㅁㅁ");
+   },5000);
+
+   setInterval(function(){
+       document.write("VV");
+   },1000);
+   var i=1;
+   setInterval(function(){
+    document.write(++i + "초");
+   },1000)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

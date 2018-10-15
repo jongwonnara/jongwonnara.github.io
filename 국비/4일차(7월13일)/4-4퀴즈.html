@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var d1=new Date().getTime();
+    var d2=new Date(2016 , 8, 22).getTime();
+    var d3=d1-d2;
+    var d4=(d3/1000)/86400;
+    
+    document.write("2016/07/22 로부터" + parseInt(d4) + "일이 지났습니다." +"<br>")
+    
+    var d5=new Date();
+    d5.setDate(d5.getDate()+100);
+    document.write(d5);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

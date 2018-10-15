@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+        쿠키 : 클라이언트 컴퓨터에 자료를 저장하는 것.
+        (ex.오늘 하루 보지 않기-광고창)
+
+        쿠키와 세션 Cookie & Session
+        -웹에서는 가끔 정보가 유지되기를 원한다.(ex.로그인 유지 ,오늘 하루 보지 않기-광고창)
+        -> 서버에 저장하거나 클라이언트에 저장한다.
+        Cookie:클라이언트에 저장하는 방식(in 브라우저)(팝업장 안 띄우기 or 최근에 본 물품)
+        Session:서버에 저장하는 방식(로그인을 유지할때)
+        
+        쿠키의 수성요소 
+        이름 = 값; 만료일; 경로;
+        이름:쿠키이름 , 값:쿠키에 저장할 값, 
+        만료일:쿠키가 만료될 시간, 경로:쿠키가 적용될 경로.
+        
+        -internet explorer  에서는 상관없지만,
+        chorme 에서는 웹서버를 통한 쿠키만 브라우저에 생성된다.
+
+
+        
+    */
+    var d = new Date();
+    console.log(d);
+    document.cookie = "name=value; expires=Thu; 18 Dec 2018 12:00:00 UTC;" ; //2018 12/18 유지되는 쿠키가 추가
+    console.log(document.cookie); 
+    </script>
+</head>
+<body>
+
+</body>
+</html>

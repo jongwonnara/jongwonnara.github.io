@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            document.write(d + "<br>");
+            document.write(d.getTime() + "<br>");
+            document.write(exdays * 24 * 60 * 60 * 1000 + "<br>");
+            document.write(d.toUTCString() + "<br>");
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            document.write(cname + "=" + cvalue + ";" + expires + ";path=/");
+        }
+        setCookie('cname','cvalue',10);
+    </script>
+</head>
+
+<body>
+    <h2>Park Jong Won</h2>
+</body>
+
+</html>

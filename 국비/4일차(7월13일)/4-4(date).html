@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* Date 객체 
+ -자바스크립트에 내장된 함수
+ -날짜와 시간을 표시하는 역할을 한다.
+ -생성자 함수가 다양하다.
+ -년 월-1 일 시 분 초 밀리초(1/1000초) 순서대로 할당.
+ -new 라고 쓴다.
+ 광고창(오늘은 그만 보기)에서 사용함
+*중요*
+유닉스타임(unixtime)
+1970-01-01 00 시 00 분 00 초 기준으로 경과된 초  
+- 날짜를 표현 및 계산 하기 쉽기 때문에
+초로 저장되기 때문에 날짜계산이 쉽다.
+
+
+ */
+// new 를 사용하지 않으면, 현재 시간만 표시한다.
+        var d1 = Date();
+        var d2 = new Date();
+        var d3 = new Date(2018,6,12.18,17,16,999);
+        var d4 = new Date(2018,6,12);
+       
+
+        document.write(d1+"<br>");
+        document.write(d2+"<br>");
+        document.write(d3+"<br>");
+        document.write(d4+"<br>");
+
+        document.write(d2.getDate()+"<br>");
+        document.write(d2.getDay()+"<br>");
+        document.write(d2.getFullYear()+"<br>");
+        document.write(d2.getMonth()+1+"<br>");
+        document.write(d2.getFullYear() + "-" + d2.getDate() +
+         "-" + (d2.getMonth()+1) + "<br>");
+        /*
+          new Date().getTime()-(2*365*24*60*69*1000)
+          d6.setFullYear(2016)
+          d6.setFullYear(d6.setFullYear()-2)   
+         + , 사용후 줄 바꿈가능 
+         unixtime yyyymmdd 
+        */
+
+
+        var d6 = new Date();
+        d6.setDate(d6.getDate()-730);//get은 값을 불러 오는거 , set은 값을 재설정하는 것
+        document.write(d6+"<br>");
+        
+    </script>
+</body>
+</html>
